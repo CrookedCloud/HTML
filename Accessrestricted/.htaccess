@@ -1,0 +1,14 @@
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile "C:\\Users\\skyre\\Documents\\WebProgramming\\WAMP\\UniServerZ\\www\\BIT607-AS3-SkyReekie-WebApplication\\HTML\\Accessrestricted\\.htpasswd"
+AuthGroupFile "C:\\Users\\skyre\\Documents\\WebProgramming\\WAMP\\UniServerZ\\www\\BIT607-AS3-SkyReekie-WebApplication\\HTML\\Accessrestricted\\.htgroup"
+
+# Restrict access to staff and admin for staffdashboard.php
+<FilesMatch "^(staffdashboard.php)$">
+    Require group staff admin
+</FilesMatch>
+
+# Restrict access to only admin
+<FilesMatch "^(admindashboard.php| addstaff.php| editstaff.php| editroster.php)$">
+    Require group admin
+</FilesMatch>

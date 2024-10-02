@@ -1,0 +1,494 @@
+/* BIT607 AS2 Sky Reekie SN:3809237 */
+
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Global font settings */
+body, p {
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+/* Header styling */
+header {
+    height: 150px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    min-height: 150px;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation styling */
+nav {
+    float: right;
+    line-height: 1;
+    position: relative;
+    z-index: 1000;
+}
+nav a {
+    text-decoration: underline;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 1px;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    line-height: 150px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/* Centered content styling */
+.centered-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Video section */
+.video {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+}
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Banner Head section */
+#BannerHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+#BannerHead h1, #BannerHead h3 {
+    margin: 0 10px;
+}
+#BannerHead h3 {
+    font-size: 50px;
+}
+#BannerHead h1 {
+    font-size: 100px;
+}
+
+/* Container for links and image */
+#links-container {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10%;
+    background-color: #000000;
+}
+
+/* Style for links column */
+#links {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+#links a {
+    text-decoration: underline;
+    color: rgb(92, 63, 255);
+    line-height: normal;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    background: rgb(38, 38, 38);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: calc(50% - 20px);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#links img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+}
+#links p {
+    max-width: 80%;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5px;
+}
+
+/* Style for image container */
+#image-container {
+    flex: 1;
+    margin-right: 10%;
+}
+#image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for horizontal rule */
+.hr-line {
+    margin-top: 50px;
+    border: 0;
+    height: 100px;
+    background: linear-gradient(to right, rgb(187, 0, 0), transparent);
+}
+
+/* Container for two columns */
+.image-container-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px 50px;
+}
+
+/* Style for each column */
+#col-one, #col-two {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#col-one img,
+#col-two img {
+    width: 45%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#col-one p,
+#col-two p {
+    width: 45%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 50px;
+}
+
+/* Container for the two rows */
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    margin: 30px 150px 50px;
+}
+
+.conatiner-4 {
+    color: #000000;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Styling for map and image content */
+#map-area, .image-content {
+    flex: 1;
+}
+.map-content, .image-content {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.map-text, .contact-text {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+iframe, .image-content img {
+    width: 100%;
+}
+.map-content iframe {
+    height: 300px;
+}
+#store-info img {
+    height: 300px !important;
+    width: auto !important;
+}
+#store-info {
+    height: auto;
+    padding-top: 30px;
+}
+
+/* Style for reservation form section */
+.reservation-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+.reservation-form h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.reservation-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #000000;
+}
+.reservation-form input,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.reservation-form button {
+    padding: 10px 20px;
+    background-color: #818181;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.reservation-form button:hover {
+    background-color: #4c59c7;
+}
+
+
+/* Style for the menu page */
+.menu-page {
+    text-align: center;
+}
+.menu-page ul {
+    list-style: none;
+    padding: 0;
+}
+.menu-page ul li {
+    margin: 10px auto;
+    display: inline-block;
+}
+.menu-page h1, .menu-page h2, .menu-page h3, .menu-page p {
+    text-align: center;
+}
+.menu-page img {
+    margin: 10px 5px;
+}
+
+/*Style for the store hours page*/
+.store-hours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.store-hours li {
+    margin: 5px 0;
+}
+.photo-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.container {
+    padding: 20px;
+}
+
+/* Recipe page styling */
+.recipe-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.recipe-list li {
+    margin: 15px 0;
+}
+.recipe-list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.recipe-list a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Pagefooter styling */
+.pagefooter {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: Alice;
+    background: rgb(152, 152, 152);
+}
+.pagefooter img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        height: 80px;
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        min-height: 100px;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        padding: 10px 0;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .video {
+        height: 40vh;
+    }
+
+    #BannerHead {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #BannerHead h1 {
+        font-size: 60px;
+    }
+
+    #BannerHead h3 {
+        font-size: 30px;
+    }
+
+    #links-container {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #links {
+        margin-right: 0;
+    }
+
+    #links a {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #links img {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .image-container-2 {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #col-one, #col-two {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #col-one p, #col-two p {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #col-one img, #col-two img {
+        width: 100%;
+    }
+
+    .container-3 {
+        flex-direction: column;
+    }
+
+    #map-area, #store-info {
+        max-width: 100%;
+    }
+}

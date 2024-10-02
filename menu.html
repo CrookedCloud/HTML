@@ -1,0 +1,154 @@
+<!--BIT607 AS3 Sky Reekie SN:3809237-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Haukai Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self';
+    object-src 'none';
+    frame-src 'self' https://www.google.com;
+    upgrade-insecure-requests;">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href='../HTML/stylesheet.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="../HTML/index.html">
+                    <img src="../Images,Icons,Videos/IconHaukaiResturant.jpg" alt="The Haukai restaurant icon Logo" height="100" width="240">
+                </a>
+            </div>
+
+            <nav id="navbar">
+                <a href="../HTML/index.html">Home</a>
+                <a href="../HTML/menu.html">Dinner Menu</a>
+                <a href="../HTML/reservations.html">Reservations</a>
+                <a href="../HTML/recipes.html">Recipes</a>
+                <a href="../HTML/contact.html">About Us</a>
+            </nav>
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <div class="video">
+        <video autoplay loop muted>
+            <source src="../HTML/Images,Icons,Videos/pohutakawamp4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Banner Head Section -->
+    <div id="BannerHead">
+        <h1>THE HAUKAI</h1>
+        <h3>Restaurant</h3>
+    </div>
+    <p class="centered-content">1 Island Street, Kerikeri, Bay of Islands | 09 401 4019</p>
+
+    <!-- Menu Section -->
+     <div class="menu-page">
+        <div class="container">
+            
+            
+
+            <!-- Appetizers Section -->
+            <h2>Appetizers</h2>
+            <ul>
+                <li><strong>Rewena Bread</strong> - Traditional Māori bread. <span>$10</span></li>
+                <li><strong>Paua Fritter</strong> - Finely diced pieces of paua, served with a side salad and horopito dressing. <span>$16</span></li>
+                <li><strong>Raw Fish</strong> - Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions. <span>$20</span></li>
+                <li><strong>Poached Salmon</strong> - Salmon poached in an orange and pistachio glaze, served with rewena bread. <span>$22</span></li>
+                <li><strong>Seafood Basket</strong> - Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns. <span>$25</span></li>
+            </ul>
+
+            <!-- Main Courses Section -->
+            <h2>Main Courses</h2>
+            <ul>
+                <li><strong>Fish of the Day</strong> - Beer-battered fish and kumara fries, served with a side salad and homemade tartare. <span>$25</span></li>
+                <li><strong>Mussels and Scallops</strong> - Steamed mussel & scallop mousse, honey and soy broth. <span>$25</span></li>
+                <li><strong>Seafood Chowder</strong> - Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread. <span>$30</span></li>
+                <li><strong>Pork Belly</strong> - Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles. <span>$30</span></li>
+                <li><strong>Lamb Steak</strong> - New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots,<br> roasted butternut squash, and mushroom jus. <span>$33</span></li>
+                <li><strong>Venison</strong> - Venison crusted with Horopito, served with glazed plums, cabbage salad, and red wine jus. <span>$33</span></li>
+            </ul>
+
+            <!-- Desserts Section -->
+            <h2>Desserts</h2>
+            <ul>
+                <li><strong>Kapiti Ice Cream</strong> - Check for daily specials. <span>$10</span></li>
+                <li><strong>Steamed Pudding</strong> - Golden-syrup-flavoured steamed pudding, served with vanilla ice cream. <span>$12</span></li>
+                <li><strong>Mini Pavlova</strong> - Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit. <span>$16</span></li>
+                <li><strong>Banoffee Pie</strong> - Toffee, fresh bananas, and fresh cream. <span>$16</span></li>
+            </ul>
+
+            <!-- Beverages Section -->
+            <h2>Beverages</h2>
+
+            <!-- Red Wine Section -->
+            <h3>Red Wine</h3>
+            <ul>
+                <li>Terrace Edge Pinot Noir, 2012, Wairarapa <span>$53 / $13</span></li>
+                <li>Altitude Pinot Noir, 2010, Marlborough <span>$64 / $15</span></li>
+                <li>Greystone Pinot Noir, 2012, Wairarapa <span>$73 / $17</span></li>
+                <li>Terrace Edge Syrah, 2012, Wairarapa <span>$53 / $13</span></li>
+                <li>Altitude Syrah, 2010, Marlborough <span>$64 / $15</span></li>
+                <li>Greystone Syrah, 2012, Wairarapa <span>$73 / $17</span></li>
+                <li>Pegasus Bay Merlot, 2013, Waipara <span>$65 / $14</span></li>
+                <li>Pegasus Bay Pinot Noir, 2013, Waipara <span>$110</span></li>
+            </ul>
+
+            <!-- White Wine Section -->
+            <h3>White Wine</h3>
+            <ul>
+                <li>Spade Oak Pinot Gris, 2011, Gisborne <span>$40 / $10</span></li>
+                <li>Maude Pinot Gris, 2017, Otago <span>$49.50 / $11</span></li>
+                <li>Charles Wiffen Chardonnay, 2013, Otago <span>$48 / $11</span></li>
+                <li>Amisfield Riesling, 2016, Otago <span>$53 / $12</span></li>
+                <li>Lamont Riesling, 2010, Otago <span>$57 / $13</span></li>
+                <li>Elephant Hill Viognier, 2013, Hawke’s Bay <span>$55 / $12</span></li>
+                <li>Folium Sauvignon Blanc, 2011, Marlborough <span>$52 / $11</span></li>
+                <li>Billecart-Salmon Brut Reserve, France <span>$120</span></li>
+            </ul>
+
+            <!-- Beer and Cider Section -->
+            <h3>Beer and Cider</h3>
+            <ul>
+                <li>Garage Project Range <span>$11</span></li>
+                <li>Tuatara Range <span>$11</span></li>
+                <li>Panhead Range <span>$10</span></li>
+                <li>Coopers Ale <span>$10</span></li>
+                <li>Heineken <span>$11</span></li>
+                <li>Moa Cider <span>$10</span></li>
+                <li>Crooked Cider <span>$11</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Page Footer -->
+    <div class="pagefooter">
+        <a href="https://www.facebook.com/">
+            <img src="../Images,Icons,Videos/Facebook-icon.png" alt="Facebook Icon">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="../Images,Icons,Videos/Instagram-icon.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img src="../Images,Icons,Videos/youtube-icon.png" alt="YouTube Icon">
+        </a>
+        <a href="https://x.com/?lang=en-nz">
+            <img src="../Images,Icons,Videos/twitter-icon.png" alt="Twitter Icon">
+        </a><br>
+        <a href="../HTML/hours.html">Store Hours</a>
+        <a href="../HTML/contact.html">Contact Us</a>
+        <a href="../HTML/Accessrestricted/staffdashboard.php">Staff Login</a>
+        <a href="../HTML/Accessrestricted/admindashboard.php">Admin Login</a>
+    </div>
+</body>
+</html>
