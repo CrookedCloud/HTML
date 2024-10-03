@@ -26,10 +26,6 @@ require_once 'config.php';
 $staffQuery = $pdo->query("SELECT * FROM staff");
 $staffDetails = $staffQuery->fetchAll(PDO::FETCH_ASSOC);
 
-// Fetch reservation details
-$reservationsQuery = $pdo->query("SELECT * FROM reservations");
-$reservationDetails = $reservationsQuery->fetchAll(PDO::FETCH_ASSOC);
-
 // Fetch roster details
 $rosterQuery = $pdo->query("SELECT * FROM roster");
 $rosterDetails = $rosterQuery->fetchAll(PDO::FETCH_ASSOC);
@@ -70,39 +66,11 @@ $rosterDetails = $rosterQuery->fetchAll(PDO::FETCH_ASSOC);
         <h3>Restaurant</h3>
     </div>
     <p class="centered-content">1 Island Street, Kerikeri, Bay of Islands | 09 401 4019</p>
+    <a href="../displayreservations.php" id="links">Veiw Reservations</a>
+    
 
 
-
-    <!-- Reservation Details Table -->
     <div class="centered-content">
-        <h2>Reservation Details</h2>
-        <table border="1">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Guests</th>
-                <th>Special Requests</th>
-                <th>Created At</th>
-            </tr>
-            <?php foreach ($reservationDetails as $reservation): ?>
-            <tr>
-                <td><?php echo htmlspecialchars($reservation['reservationID']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['name']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['email']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['phone']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['reservation_date']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['reservation_time']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['number_of_guests']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['special_requests']); ?></td>
-                <td><?php echo htmlspecialchars($reservation['created_at']); ?></td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-
 
         <!-- Roster Details Table -->
         <h2>Roster Details</h2>

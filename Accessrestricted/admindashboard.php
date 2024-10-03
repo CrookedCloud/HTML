@@ -18,15 +18,12 @@ require_once 'config.php';
 $staffQuery = $pdo->query("SELECT * FROM staff");
 $staffDetails = $staffQuery->fetchAll(PDO::FETCH_ASSOC);
 
-// Fetch reservation details
-$reservationsQuery = $pdo->query("SELECT * FROM reservations");
-$reservationDetails = $reservationsQuery->fetchAll(PDO::FETCH_ASSOC);
-
 // Fetch roster details
 $rosterQuery = $pdo->query("SELECT * FROM roster");
 $rosterDetails = $rosterQuery->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
+<!--Nav bar-->
 <body>
     <header>
         <div class="wrapper">
@@ -63,12 +60,16 @@ $rosterDetails = $rosterQuery->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <p class="centered-content">1 Island Street, Kerikeri, Bay of Islands | 09 401 4019</p>
 
-    <!-- Add New Staff -->
+    <!--Display links-->
+    <div class="centered-links">
+    <a href="../displayreservations.php">Veiw Reservations</a>
+    <a href="../Accessrestricted/staffdashboard.php">Staff Dashboard</a>
+    <a href="addstaff.php">Add New Staff</a><br>
+    </div>
+
+    <!-- Staff Table -->
     <div class="centered-content">
         <h2>Staff Management</h2>
-        <a href="addstaff.php">Add New Staff</a><br>
-
-        <!-- Staff Table -->
         <table border="1" cellpadding="10">
             <thead>
                 <tr>
@@ -96,11 +97,12 @@ $rosterDetails = $rosterQuery->fetchAll(PDO::FETCH_ASSOC);
         </table>
     </div>
 
-    <!-- Roster Management -->
-    <div class="centered-content">
-        <h2>Roster Management</h2>
 
-        <!-- Roster Table -->
+
+
+    <!-- Roster Table -->
+    <div class="centered-content">
+        <h2>Roster Management</h2>         
         <table border="1" cellpadding="10">
             <thead>
                 <tr>

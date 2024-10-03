@@ -1,6 +1,6 @@
 <?php
 // Include the database configuration file
-include 'config.php';
+include 'Accessrestricted\config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data

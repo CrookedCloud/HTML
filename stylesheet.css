@@ -11,7 +11,7 @@ body, p {
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    background: rgb(0, 0, 0);
+    background: rgb(19, 19, 19);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
@@ -67,7 +67,7 @@ nav a {
 }
 
 /* Centered content styling */
-.centered-content {
+.centered-content, p, a {
     text-align: center;
     margin: 0 auto;
     max-width: 800px;
@@ -110,7 +110,7 @@ nav a {
     display: flex;
     margin-top: 50px;
     margin-left: 10%;
-    background-color: #000000;
+    background-color: 19, 19, 19;
 }
 
 /* Style for links column */
@@ -123,14 +123,14 @@ nav a {
 }
 #links a {
     text-decoration: underline;
-    color: rgb(92, 63, 255);
+    color: rgb(38, 0, 251);
     line-height: normal;
     font-family: monospace;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
-    background: rgb(38, 38, 38);
-    padding: 5px 10px;
+    background: rgb(169, 169, 169);
+    padding: 15px;
     box-sizing: border-box;
     width: calc(50% - 20px);
     height: 60px;
@@ -152,6 +152,29 @@ nav a {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5px;
+}
+#links a:hover {
+    color: #0f0067;
+}
+
+.centered-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: Alice;
+}
+
+.centered-links a {
+    margin: 0 10px;
+    color: #2600ff;
+}
+
+.centered-links a:hover {
+    color: #0f0067;
 }
 
 /* Style for image container */
@@ -288,14 +311,14 @@ iframe, .image-content img {
 .reservation-form button {
     padding: 10px 20px;
     background-color: #818181;
-    color: #fff;
+    color: #0000ff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
 }
 .reservation-form button:hover {
-    background-color: #4c59c7;
+    background-color: #ffffff;
 }
 
 
@@ -341,25 +364,30 @@ iframe, .image-content img {
     list-style-type: none;
     padding: 0;
     text-align: center;
+
 }
 .recipe-list li {
     margin: 15px 0;
+    padding: 20px;
 }
 .recipe-list a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 255);
     font-family: monospace;
     font-weight: 100;
     font-size: 1.2em;
-    padding: 10px 15px;
+    padding: 15px;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    background-color:#7e7e7e;
 }
 .recipe-list a:hover {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
 }
 
 /* Pagefooter styling */
+.pagefooter a:hover {
+    color: #170194;
+}
 .pagefooter {
     text-align: center;
     padding: 20px;
